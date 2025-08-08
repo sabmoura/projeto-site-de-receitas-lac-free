@@ -1,0 +1,41 @@
+/* Main - Seção Hero */
+#hero {
+    min-height: 50vh;
+    padding-block: 1.5rem;
+    background: url('../../img/background.jpg');
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: left;
+}
+
+.hero-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 3rem 1.5rem;
+    background: linear-gradient(135deg, rgba(252, 235, 235, 0.925), rgba(245, 155, 185, 0.685));
+    border-radius: 25px;
+    width: 60vw;
+}
+
+.hero-img {
+    grid-area: hero-img;
+    background: url('../../img/dotted_line_face-cow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 5rem;
+    height: 5rem;
+    margin-inline: 1rem;
+}
+
+.hero-txt {
+    margin-inline: 1rem;
+}
+
+.hero-btn {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem;
+}

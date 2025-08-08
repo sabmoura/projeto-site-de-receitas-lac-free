@@ -1,0 +1,45 @@
+/* Cabeçalho */
+header {
+    background: var(--bs-primary);
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.navbar-nav {
+    flex-flow: row nowrap;
+}
+
+.nav-item {
+    margin-inline: 1rem;
+    padding-block: 0.4rem;
+}
+
+/* Cabeçalho - Links */
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar-brand a {
+    &:link,
+    &:visited {
+        color: var(--bs-light);
+    }
+}
+
+.nav-item a {
+    &:link,
+    &:visited {
+        color: var(--bs-light);
+    }
+
+    &:hover,
+    &:active {
+        border-bottom: 2px solid var(--bs-light);
+    }
+}

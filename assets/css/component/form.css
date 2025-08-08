@@ -1,0 +1,56 @@
+/* Main - Seção Contact - Formulário */
+.form-container {
+    padding-bottom: 5rem;
+    margin-block: -3rem 0;
+    min-height: 70vh;
+    transition: all ease 0.3s;
+}
+
+.form-control,
+.form-check-input {
+    border: 1px solid var(--bs-primary);
+}
+
+.form-control:active,
+.form-control:focus,
+.form-check-input:active, 
+.form-check-input:focus {
+    border: 1px solid var(--bs-primary);
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-check-label > a {
+    text-decoration: none;
+    font-weight: 600;
+
+    &:link,
+    &:visited {
+        color: var(--bs-dark);
+    }
+
+    &:hover,
+    &:active {
+        border-bottom: 2px solid var(--bs-primary);
+    }
+}
+
+.form-check-input {
+    position: relative;
+}
+
+.form-check-input:checked {
+    background: var(--bs-primary);
+    accent-color: var(--bs-secondary);
+}
+
+.form-check-input:checked::before {
+    content: '\2713'; /* Ícone de marca de seleção (✓) */
+    display: block;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

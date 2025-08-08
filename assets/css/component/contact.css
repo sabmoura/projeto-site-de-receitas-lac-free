@@ -1,0 +1,48 @@
+/* Main - Seção Contact */
+#contact {
+    background: var(--bs-tertiary);
+    min-height: 40vh;
+}
+
+.contact-container {
+    padding-block: 4rem 6rem;
+    margin-bottom: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-img {
+    background: url('../../img/pink-heart-envelope.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4rem;
+    height: 4rem;
+    transform: rotate(15deg);
+    animation: spin-contact 3s linear infinite;
+}
+
+.contact-txt {
+    padding-block: 2rem;
+}
+
+.contact-btn {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes spin-contact {
+    0% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}

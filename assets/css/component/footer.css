@@ -1,0 +1,35 @@
+/* Rodapé */
+footer {
+    position: relative;
+    bottom: 0;
+    min-height: 2.5rem;
+    background: var(--bs-dark);
+}
+
+.footer-container {
+    max-width: 70%;
+}
+
+footer p {
+    margin: 0 auto;
+    text-align: center;
+    color: var(--bs-light);
+}
+
+footer span {
+    color: var(--bs-primary);
+}
+
+footer a {
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+        color: var(--bs-secondary);
+    }
+
+    &:hover,
+    &:active {
+        color: var(--bs-primary);
+    }
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat+Alternates:ital,wght@0,300;0,400;0,600;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('component/header.css');
+@import url('component/footer.css');
+@import url('component/hero.css');
+@import url('component/about.css');
+@import url('component/gallery.css');
+@import url('component/contact.css');
+@import url('component/content.css');
+@import url('component/button.css');
+@import url('component/form.css');
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis */
+:root {
+    /* Cores */
+    --bs-primary:   hotpink;
+    --bs-secondary: rgb(138, 48, 78);
+    --bs-tertiary:  pink;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+
+    /* Fontes */
+    --brand-font-family: 'Croissant One', serif;
+    --heading-font-family: 'Montserrat Alternates', sans-serif;
+    --body-font-family: 'Noto Sans', sans-serif;
+
+    --bs-body-font-family: var(--body-font-family);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-bg: var(--bs-light);         /* Cor de fundo */
+    --bs-body-color: var(--bs-dark);       /* Cor do texto */
+    --bs-link-color: var(--bs-primary);    /* Cor dos links */
+}
+
+/* Global */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+    font-family: var(--heading-font-family);
+}
+
+/* Texto */
+p {
+    max-width: 50ch;
+    text-wrap: pretty;
+}
+
+/* Logo */
+.brand {
+    font-family: var(--brand-font-family);
+}
+
+/* Main */
+section:not(:last-of-type) {
+    margin-bottom: 3rem;
+}
+
+section .container {
+    max-width: 70%;
+    margin-inline: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+

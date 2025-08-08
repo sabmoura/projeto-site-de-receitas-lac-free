@@ -1,0 +1,42 @@
+/* Main - Seção Gallery */
+.gallery-container {
+    padding: 1.5rem 3rem;
+    min-height: 50vh;
+}
+
+.gallery-cards {
+    margin-block: 1.5rem;
+    border-radius: 0;
+}
+
+#gallery .card {
+    margin-bottom: 1rem;
+    background: var(--bs-secondary);
+    border: 0;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(0.95);
+    }
+}
+
+#gallery .card-link {
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+
+    &:link,
+    &:visited {
+        color: var(--bs-light);
+    }
+
+    &:hover,
+    &:active {
+        background: var(--bs-primary);
+    }
+}
+
+#gallery .card-img-top {
+    border-radius: 25px 25px 0 0;
+}

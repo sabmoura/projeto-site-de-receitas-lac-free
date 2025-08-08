@@ -1,0 +1,63 @@
+/* Main - Seção Content */
+.content-container {
+    padding: 1.5rem 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.content-container h2 {
+    margin-top: 2rem;
+}
+
+.content-img {
+    margin-top: 1rem;
+    margin-inline: auto;
+
+    > img {
+        border-radius: 25px;
+    }
+}
+
+.inner-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-block: 2rem;
+}
+
+.inner-container h3 {
+    color: var(--bs-primary);
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+/* Main - Seção Content - Seção Ingredients */
+.ingredients {
+    min-width: 40%;
+}
+
+.ingredients tr:not(:last-of-type) {
+    border-bottom: 1px solid var(--bs-secondary);
+}
+
+.ingredients td {
+    padding-inline: 1rem;
+}
+
+.ingredients th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding-inline: 1rem;
+}
+
+/* Main - Seção Content - Seção Instructions */
+.instructions {
+    min-width: 40%;
+
+    li {
+        max-width: 40ch;
+        padding-block: 0.25rem;
+    }
+}
